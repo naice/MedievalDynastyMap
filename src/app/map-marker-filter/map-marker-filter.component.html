@@ -1,0 +1,6 @@
+<mat-selection-list #shoes [(ngModel)]="selectedMapMarkerTypes" (ngModelChange)="mapMarkerFilterChanged()">
+  <mat-list-option [value]="markerType" *ngFor="let markerType of mapMarkerTypes">
+    <img matListAvatar [src]="getImageSrc(markerType)" alt="...">
+    <span class="no-select">{{markerType}}</span>
+  </mat-list-option>
+</mat-selection-list>

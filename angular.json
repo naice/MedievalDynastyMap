@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "MedievalDynastyMap"
+    }
+  },
+  "defaultProject": "MedievalDynastyMap",
+  "cli": {
+    "analytics": false
+  }
 }

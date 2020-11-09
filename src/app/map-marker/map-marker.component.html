@@ -1,0 +1,14 @@
+<div
+  style="position: absolute; background-size: 100% 100%;"
+  [style.backgroundImage]="'url(' + markerImageUrl + ')'"
+  [style.width.px]="width"
+  [style.height.px]="height"
+  [style.left.px]="mapMarker.origin.x - (width / 2)"
+  [style.top.px]="mapMarker.origin.y - (height / 2)">
+  <button
+    [style.marginLeft.px]="(width / 2) - 20"
+    mat-mini-fab aria-label="Remove Map Marker"
+    (click)="onDelete()">
+    <mat-icon >delete</mat-icon>
+  </button>
+</div>
