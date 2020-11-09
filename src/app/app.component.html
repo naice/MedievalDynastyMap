@@ -2,14 +2,9 @@
   <div class="map__wrappper">
     <pan-zoom [config]="panZoomConfig">
       <div style="position: relative;">
-        <img src="/assets/T_Map_Render.jpg"
+        <img class="no-select"
+          src="/assets/T_Map_Render.jpg"
           (dblclick)="onDoubleClick($event)">
-        <!-- <div
-          style="position: absolute; width:48px; height: 48px;"
-          [style.left.px]="marker.left"
-          [style.top.px]="marker.top"
-          [style.backgroundColor]="marker.color">
-        </div> -->
         <div *ngFor="let marker of mapMarkers">
           <ng-container
             *ngComponentOutlet="marker.component; injector: marker.injector">
@@ -25,7 +20,7 @@
     <button mat-flat-button (click)="center()">Center Map</button>
   </div>
   <div>
-    <app-map-marker-filter (selectedMapMarkerTypesChange)="mapMarkerFilterChanged($event)" ></app-map-marker-filter>
+    <app-map-marker-filter></app-map-marker-filter>
   </div>
   <div>
     <mat-checkbox [checked]="isEditMode" (change)="isEditMode = $event.checked">Edit mode</mat-checkbox>

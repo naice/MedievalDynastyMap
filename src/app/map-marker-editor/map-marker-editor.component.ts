@@ -13,7 +13,7 @@ export interface MapMarkerTypeOption {
 })
 export class MapMarkerEditorComponent extends MapMarkerTypeResource implements OnInit {
 
-  public mapMarkerTypes: MapMarkerType[] = Object.keys(MapMarkerType).map(k=> k as MapMarkerType);
+  public mapMarkerTypes: MapMarkerType[] = Object.keys(MapMarkerType).map(k=> MapMarkerType[k]);
   @Input()
   selectMapMarkerTypeOptions = MapMarkerType;
 
@@ -35,7 +35,6 @@ export class MapMarkerEditorComponent extends MapMarkerTypeResource implements O
   constructor() { super(); }
 
   ngOnInit(): void {
-    this.selectedMapMarkerType = MapMarkerType.BEAR;
   }
 
 }

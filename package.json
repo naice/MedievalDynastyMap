@@ -23,7 +23,7 @@
     "@angular/router": "~10.1.6",
     "angular2-uuid": "^1.1.1",
     "lodash": "^4.17.20",
-    "ng2-panzoom": "^10.0.0",
+    "ngx-panzoom": "^10.3.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"

@@ -1,13 +1,14 @@
 import * as _ from 'lodash';
 import { Component, Injector, Input, OnInit } from '@angular/core';
 import { UUID } from 'angular2-uuid';
-import { PanZoomConfig, PanZoomAPI } from 'ng2-panzoom';
+import { PanZoomConfig, PanZoomAPI, PanZoomConfigOptions } from 'ngx-panzoom';
 import { Subscription } from 'rxjs';
 import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
 import { MapMarker, MapMarkerOrigin } from './map-marker/map-marker';
 import { MapMarkerStorage } from './map-marker/map-marker-storage';
 import { MapMarkerType, MapMarkerTypeResource } from './map-marker/map-marker-type.enum';
 import { MapMarkerComponent } from './map-marker/map-marker.component';
+import { MapMarkerFilterController } from './map-marker-filter/map-marker-filter.controller';
 
 export interface MapMarkerContainer {
   mapMarker: MapMarker;
@@ -22,15 +23,17 @@ export interface MapMarkerContainer {
 })
 export class AppComponent implements OnInit {
   title: string = 'MedievalDynastyMap';
-  panZoomConfig: PanZoomConfig = new PanZoomConfig({
+  panZoomConfigOptions: PanZoomConfigOptions = {
+    zoomLevels: 12,
+    neutralZoomLevel: 5,
+    scalePerZoomLevel: 1.5,
     freeMouseWheel: false,
     invertMouseWheel: false,
     zoomButtonIncrement: 0.4,
-    initialZoomLevel:0.2,
-    neutralZoomLevel:0.2,
     dynamicContentDimensions: true,
     zoomOnDoubleClick: false,
-  });
+  };
+  panZoomConfig: PanZoomConfig = new PanZoomConfig(this.panZoomConfigOptions);
   isEditMode: boolean = true;
   mapMarkers: MapMarkerContainer[] = [];
   panZoomAPI: PanZoomAPI;
@@ -43,20 +46,10 @@ export class AppComponent implements OnInit {
   constructor(
     private injector: Injector,
     private _mapMarkerStorage: MapMarkerStorage,
+    private _mapMarkerFilterController: MapMarkerFilterController,
   ) {
     this._markerStorageAddedSubscription = _mapMarkerStorage.addedEvent.subscribe((marker: MapMarker) => this.addMapMarker(marker));
     this._markerStorageRemovedSubscription = _mapMarkerStorage.removedEvent.subscribe((marker: MapMarker) => this.removeMapMarker(marker));
-  }
-
-  mapMarkerFilterChanged(selectedMapMarkerTypes: MapMarkerType[]): void {
-    this.removeAllMapMarker();
-    for (const mapMarker of this._mapMarkerStorage.markers) {
-      const filter = _.find(selectedMapMarkerTypes, (f)=> f === mapMarker.type);
-      if (!filter) {
-        continue;
-      }
-      this.addMapMarker(mapMarker);
-    }
   }
 
   ngOnInit(): void {
@@ -69,7 +62,6 @@ export class AppComponent implements OnInit {
   }
 
   center(): void {
-    console.log('center clicked');
     this.panZoomAPI.centerContent();
   }
 
@@ -78,6 +70,7 @@ export class AppComponent implements OnInit {
     const type = this.editMapMarkerType;
     const id = UUID.UUID();
     const mapMarker: MapMarker = { id, origin, type };
+    this._mapMarkerFilterController.ensureEnabled(type);
     this._mapMarkerStorage.add(mapMarker);
   }
 

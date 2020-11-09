@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { Ng2PanZoomModule } from 'ng2-panzoom';
+import { NgxPanZoomModule } from 'ngx-panzoom';
 
 import { AppComponent } from './app.component';
 import { UploadImageComponent } from './upload-image/upload-image.component';
@@ -58,7 +58,7 @@ import { MapMarkerFilterComponent } from './map-marker-filter/map-marker-filter.
   imports: [
     FormsModule,
     BrowserModule,
-    Ng2PanZoomModule,
+    NgxPanZoomModule,
     BrowserAnimationsModule,
 
     // Material Components
