@@ -4,9 +4,9 @@ import { UUID } from 'angular2-uuid';
 import { PanZoomConfig, PanZoomAPI, PanZoomConfigOptions } from 'ngx-panzoom';
 import { Subscription } from 'rxjs';
 import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
-import { MapMarker, MapMarkerOrigin } from './map-marker/map-marker';
-import { MapMarkerStorage } from './map-marker/map-marker-storage';
-import { MapMarkerType, MapMarkerTypeResource } from './map-marker/map-marker-type.enum';
+import { MapMarker, MapMarkerOrigin } from './map-marker';
+import { MapMarkerStorage } from './map-marker-storage';
+import { MapMarkerType, MapMarkerTypeResource } from './map-marker-type.enum';
 import { MapMarkerComponent } from './map-marker/map-marker.component';
 import { MapMarkerFilterController } from './map-marker-filter/map-marker-filter.controller';
 

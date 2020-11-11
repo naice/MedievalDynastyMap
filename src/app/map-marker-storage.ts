@@ -1,5 +1,5 @@
 import { EventEmitter, Inject, Injectable } from '@angular/core';
-import { IKVStorageProvider } from '../kv-storage/ikv-storage-provider';
+import { RemoteStorageProvider } from './kv-storage/remote-storage-provider';
 import { MapMarker } from './map-marker';
 
 @Injectable({
@@ -12,28 +12,32 @@ export class MapMarkerStorage {
   public storageKey: string = 'mapMarkersStorage';
 
   constructor(
-    @Inject('IKVStorageProvider')
-    private _storageProvider: IKVStorageProvider
+    private _storageProvider: RemoteStorageProvider
   ) {}
-  public load() {
-    const loadedMarkers: MapMarker[] = this._storageProvider.load(this.storageKey, null);
+  public async load() {
+    this.markers.length = 0;
+    const loadedMarkers: MapMarker[] = await this._storageProvider.load<MapMarker[]>(this.storageKey, null).toPromise();
     if (loadedMarkers === null) {
       console.log('could not load map markers');
       return;
     }
 
     for (const marker of loadedMarkers) {
-      this.add(marker);
+      this.addInternal(marker);
     }
   }
 
   public store() {
-    this._storageProvider.store(this.storageKey, this.markers);
+    this._storageProvider.store(this.storageKey, this.markers).toPromise();
+  }
+
+  private addInternal(marker: MapMarker) {
+    this.markers.push(marker);
+    this.addedEvent.emit(marker);
   }
 
   public add(marker: MapMarker) {
-    this.markers.push(marker);
-    this.addedEvent.emit(marker);
+    this.addInternal(marker);
     this.store();
   }
 

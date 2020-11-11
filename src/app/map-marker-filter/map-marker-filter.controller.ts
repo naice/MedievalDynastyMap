@@ -1,6 +1,6 @@
 import { EventEmitter, Injectable } from '@angular/core';
 import * as _ from 'lodash';
-import { MapMarkerType } from '../map-marker/map-marker-type.enum';
+import { MapMarkerType } from '../map-marker-type.enum';
 
 @Injectable({
   providedIn: 'root'

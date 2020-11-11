@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Inject, Input, OnDestroy, OnInit, Output } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { IKVStorageProvider } from "../kv-storage/ikv-storage-provider";
-import { MapMarkerType, MapMarkerTypeResource } from '../map-marker/map-marker-type.enum';
+import { LocalStorageProvider } from '../kv-storage/local-storage-provider';
+import { MapMarkerType, MapMarkerTypeResource } from '../map-marker-type.enum';
 import { MapMarkerFilterController } from './map-marker-filter.controller';
 
 @Component({
@@ -16,8 +16,7 @@ export class MapMarkerFilterComponent extends MapMarkerTypeResource implements O
   public storageKey: string = 'selectedMapMarkerTypes';
 
   constructor(
-    @Inject('IKVStorageProvider')
-    private _storageProvider: IKVStorageProvider,
+    private _storageProvider: LocalStorageProvider,
     private _mapMarkerFilterController: MapMarkerFilterController
   ) { super(); }
 

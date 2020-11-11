@@ -45,6 +45,7 @@ import { MapMarkerEditorComponent } from './map-marker-editor/map-marker-editor.
 import { LocalStorageProvider } from "./kv-storage/local-storage-provider";
 import { FormsModule } from '@angular/forms';
 import { MapMarkerFilterComponent } from './map-marker-filter/map-marker-filter.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -58,6 +59,7 @@ import { MapMarkerFilterComponent } from './map-marker-filter/map-marker-filter.
   imports: [
     FormsModule,
     BrowserModule,
+    HttpClientModule,
     NgxPanZoomModule,
     BrowserAnimationsModule,
 
@@ -96,7 +98,6 @@ import { MapMarkerFilterComponent } from './map-marker-filter/map-marker-filter.
     MatRippleModule,
   ],
   providers: [
-    { provide:'IKVStorageProvider', useValue: new LocalStorageProvider() }
   ],
   bootstrap: [AppComponent]
 })

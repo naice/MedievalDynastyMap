@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { MapMarkerType, MapMarkerTypeResource } from '../map-marker/map-marker-type.enum';
+import { MapMarkerType, MapMarkerTypeResource } from '../map-marker-type.enum';
 
 export interface MapMarkerTypeOption {
   displayText: string;

@@ -1,13 +1,13 @@
-import { IKVStorageProvider } from './ikv-storage-provider';
+import { Injectable } from '@angular/core';
 
+@Injectable({ providedIn: 'root' })
+export class LocalStorageProvider {
 
-export class LocalStorageProvider implements IKVStorageProvider {
-
-  store<T>(key: string, data: T): void {
+  public store<T>(key: string, data: T): void {
     window.localStorage.setItem(key, JSON.stringify(data));
   }
 
-  load<T>(key: string, defaultValue?: T): T {
+  public load<T>(key: string, defaultValue?: T): T {
     let rval: T = defaultValue;
     try {
       const raw = window.localStorage.getItem(key);
