@@ -17,16 +17,30 @@
 </div>
 <div class="menu__container">
   <div>
-    <button mat-flat-button (click)="center()">Center Map</button>
-  </div>
-  <div>
-    <app-map-marker-filter></app-map-marker-filter>
-  </div>
-  <div>
-    <mat-checkbox [checked]="isEditMode" (change)="isEditMode = $event.checked">Edit mode</mat-checkbox>
-  </div>
-  <div *ngIf="isEditMode">
-    <app-map-marker-editor [(selectedMapMarkerType)]="editMapMarkerType">
-    </app-map-marker-editor>
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Map Filter
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <app-map-marker-filter></app-map-marker-filter>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Cities
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <app-city-jumper [cities]="getCities()"></app-city-jumper>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="isEditorOpen = true" (closed)="isEditorOpen = false">
+        <mat-expansion-panel-header>
+          Editor
+        </mat-expansion-panel-header>
+        <app-map-marker-editor [isEditorEnabled]="isEditorOpen">
+        </app-map-marker-editor>
+      </mat-expansion-panel>
+    </mat-accordion>
   </div>
 </div>

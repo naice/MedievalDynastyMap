@@ -10,7 +10,7 @@ export enum MapMarkerType {
   CAVE = "Cave",
   CLAY_DEPOSIT = "Clay Deposit",
   CITY = "City",
-  PERSON = "Person",
+  //PERSON = "Person",
 }
 
 export class MapMarkerTypeResource {

@@ -1,12 +1,7 @@
-<mat-card>
-  <mat-card-content>
-    <mat-card-title>
-      Edit mode
-    </mat-card-title>
-    <mat-select [(value)]="selectedMapMarkerType" placeholder="Map marker type">
-      <mat-option *ngFor="let markerType of mapMarkerTypes" [value]="markerType">
-        {{markerType}}
-      </mat-option>
-    </mat-select>
-  </mat-card-content>
-</mat-card>
+<h3 matSubheader>Select a marker type and double click the map!</h3>
+<mat-selection-list [(ngModel)]="selectedMapMarkerTypes" [multiple]="false">
+  <mat-list-option [value]="markerType" *ngFor="let markerType of mapMarkerTypes">
+    <img matListAvatar [src]="getImageSrc(markerType)" class="no-select">
+    <span class="no-select">{{markerType}}</span>
+  </mat-list-option>
+</mat-selection-list>

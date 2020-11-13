@@ -3,6 +3,7 @@ import { MapMarkerFilterController } from '../map-marker-filter/map-marker-filte
 import { MapMarker } from '../map-marker';
 import { MapMarkerStorage } from '../map-marker-storage';
 import { MapMarkerBaseComponent } from '../map-marker-base-component';
+import { MapMarkerEditorController } from '../map-marker-editor/map-marker-editor.controller';
 
 @Component({
   selector: 'app-map-marker',
@@ -14,9 +15,12 @@ export class MapMarkerComponent extends MapMarkerBaseComponent implements OnInit
   constructor(
     mapMarker: MapMarker,
     mapMarkerStorage: MapMarkerStorage,
-    mapMarkerFilterController: MapMarkerFilterController
+    mapMarkerFilterController: MapMarkerFilterController,
+    mapMarkerEditorController: MapMarkerEditorController,
   ) {
-    super(mapMarker, mapMarkerStorage, mapMarkerFilterController);
+    super(mapMarker, mapMarkerStorage, mapMarkerFilterController, mapMarkerEditorController);
+    super.width = 264;
+    super.height = 264;
   }
   ngOnDestroy(): void {
     super.OnDestroy();

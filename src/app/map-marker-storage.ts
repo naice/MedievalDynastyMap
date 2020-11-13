@@ -1,6 +1,8 @@
-import { EventEmitter, Inject, Injectable } from '@angular/core';
-import { RemoteStorageProvider } from './kv-storage/remote-storage-provider';
+import { EventEmitter, Injectable } from '@angular/core';
+import { KVStorageProvider } from './kv-storage/ik-storage-provider';
 import { MapMarker } from './map-marker';
+import StaticMapMarkers from '../assets/data/map-markers.json';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root',
@@ -12,14 +14,18 @@ export class MapMarkerStorage {
   public storageKey: string = 'mapMarkersStorage';
 
   constructor(
-    private _storageProvider: RemoteStorageProvider
+    private _storageProvider: KVStorageProvider
   ) {}
   public async load() {
     this.markers.length = 0;
-    const loadedMarkers: MapMarker[] = await this._storageProvider.load<MapMarker[]>(this.storageKey, null).toPromise();
+    let loadedMarkers: MapMarker[] = await this._storageProvider.load<MapMarker[]>(this.storageKey, null).toPromise();
     if (loadedMarkers === null) {
       console.log('could not load map markers');
-      return;
+      if (environment.production) {
+        loadedMarkers = StaticMapMarkers as MapMarker[];
+      } else {
+        return;
+      }
     }
 
     for (const marker of loadedMarkers) {

@@ -1,0 +1,11 @@
+.map-marker-city {
+  position: absolute;
+  background-size: 100% 100%;
+  background-image: url("/assets/markers/city_marker.png");
+}
+.map-marker-city__marker-title {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}

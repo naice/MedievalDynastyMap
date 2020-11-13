@@ -1,13 +1,16 @@
 import { Injectable } from '@angular/core';
+import { EMPTY, from, Observable } from 'rxjs';
+import { KVStorageProvider } from './ik-storage-provider';
 
 @Injectable({ providedIn: 'root' })
-export class LocalStorageProvider {
+export class LocalStorageProvider extends KVStorageProvider {
 
-  public store<T>(key: string, data: T): void {
+  public store<T>(key: string, data: T): Observable<boolean> {
     window.localStorage.setItem(key, JSON.stringify(data));
+    return from([true]);
   }
 
-  public load<T>(key: string, defaultValue?: T): T {
+  public load<T>(key: string, defaultValue?: T): Observable<T> {
     let rval: T = defaultValue;
     try {
       const raw = window.localStorage.getItem(key);
@@ -17,6 +20,6 @@ export class LocalStorageProvider {
     } catch (error) {
       console.log(error);
     }
-    return rval;
+    return from([rval]);
   }
 }

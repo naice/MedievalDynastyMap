@@ -45,7 +45,11 @@ import { MapMarkerEditorComponent } from './map-marker-editor/map-marker-editor.
 import { LocalStorageProvider } from "./kv-storage/local-storage-provider";
 import { FormsModule } from '@angular/forms';
 import { MapMarkerFilterComponent } from './map-marker-filter/map-marker-filter.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { MapMarkerCityComponent } from './map-marker-city/map-marker-city.component';
+import { CityJumperComponent } from './city-jumper/city-jumper.component';
+import { KVStorageProvider } from './kv-storage/ik-storage-provider';
+import { KVStorageProviderFactory } from './kv-storage/kv-storage-provider-factory';
 
 
 @NgModule({
@@ -54,7 +58,9 @@ import { HttpClientModule } from '@angular/common/http';
     UploadImageComponent,
     MapMarkerComponent,
     MapMarkerEditorComponent,
-    MapMarkerFilterComponent
+    MapMarkerFilterComponent,
+    MapMarkerCityComponent,
+    CityJumperComponent
   ],
   imports: [
     FormsModule,
@@ -98,6 +104,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatRippleModule,
   ],
   providers: [
+    { provide: KVStorageProvider, useFactory: KVStorageProviderFactory, deps: [ HttpClient ] }
   ],
   bootstrap: [AppComponent]
 })

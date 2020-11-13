@@ -1,0 +1,20 @@
+<div
+  *ngIf="visible"
+  class="no-select map-marker-city"
+  [style.width.px]="width"
+  [style.height.px]="height"
+  [style.left.px]="mapMarker.origin.x - (width / 2)"
+  [style.top.px]="mapMarker.origin.y - (height / 2)">
+  <!-- 363,48 -->
+  <div class="no-select map-marker-city__marker-title">
+    {{city.name}}
+  </div>
+  <button
+    *ngIf="isEditMode"
+    class="no-select"
+    [style.marginLeft.px]="(width) - 20"
+    mat-mini-fab aria-label="Remove Map Marker"
+    (click)="onDelete()">
+    <mat-icon >delete</mat-icon>
+  </button>
+</div>

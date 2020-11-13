@@ -15,16 +15,21 @@ export class MapMarkerFilterComponent extends MapMarkerTypeResource implements O
   public mapMarkerTypes: MapMarkerType[] = Object.keys(MapMarkerType).map(k=> MapMarkerType[k]);
   public storageKey: string = 'selectedMapMarkerTypes';
 
+  private subs: Subscription[] = [];
+
   constructor(
     private _storageProvider: LocalStorageProvider,
     private _mapMarkerFilterController: MapMarkerFilterController
   ) { super(); }
 
   ngOnDestroy(): void {
+    this.subs.forEach(sub => sub.unsubscribe());
   }
 
   ngOnInit(): void {
-    this.selectedMapMarkerTypes = this._storageProvider.load(this.storageKey, Object.keys(MapMarkerType).map(k=> MapMarkerType[k]));
+    this.subs.push(
+      this._storageProvider.load(this.storageKey, Object.keys(MapMarkerType).map(k=> MapMarkerType[k]))
+        .subscribe(types => this.selectedMapMarkerTypes = types));
     this.mapMarkerFilterChanged();
   }
 
