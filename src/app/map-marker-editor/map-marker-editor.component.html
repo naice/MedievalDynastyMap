@@ -5,3 +5,24 @@
     <span class="no-select">{{markerType}}</span>
   </mat-list-option>
 </mat-selection-list>
+<h3 matSubheader>Reset all Map Markers to default.</h3>
+<div class="editor__reset-container">
+  <div>
+    <button #resetButton mat-raised-button disabled color="warn" (click)="mapMarkerStorage.resetAll()">Reset</button>
+  </div>
+  <div>
+    <mat-label ngClass="editor__reset-slide-label">can't be undone!</mat-label>
+    <mat-slide-toggle (change)="resetButton.disabled = !$event.checked" color="warn"></mat-slide-toggle>
+  </div>
+</div>
+<h3 matSubheader>Remove all Map Markers.</h3>
+<div class="editor__reset-container">
+  <div>
+    <button #clearButton mat-raised-button disabled color="warn" (click)="mapMarkerStorage.removeCustomMarkers()">Clear</button>
+  </div>
+  <div>
+    <mat-label ngClass="editor__reset-slide-label">can't be undone!</mat-label>
+    <mat-slide-toggle (change)="clearButton.disabled = !$event.checked" color="warn"></mat-slide-toggle>
+  </div>
+</div>
+

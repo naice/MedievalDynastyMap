@@ -1,6 +1,7 @@
 <div
   *ngIf="visible"
   class="no-select map-marker-city"
+  [style.backgroundImage]="'url(assets/markers/city_marker.png)'"
   [style.width.px]="width"
   [style.height.px]="height"
   [style.left.px]="mapMarker.origin.x - (width / 2)"

@@ -1,46 +1,63 @@
-<div class="map__container">
-  <div class="map__wrappper">
-    <pan-zoom [config]="panZoomConfig">
-      <div style="position: relative;">
-        <img class="no-select"
-          src="/assets/T_Map_Render.jpg"
-          (dblclick)="onDoubleClick($event)">
-        <div *ngFor="let marker of mapMarkers">
-          <ng-container
-            *ngComponentOutlet="marker.component; injector: marker.injector">
-          </ng-container>
-        </div>
-      </div>
-    </pan-zoom>
-  </div>
-  <div class="map__overlay"></div>
+<div class="map__burger-bar-container">
+  <mat-toolbar>
+    <button mat-icon-button aria-label="Toggle Menu" (click)="menuBar.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Medieval Dynasty Map</span>
+    <span class="flex-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
 </div>
-<div class="menu__container">
-  <div>
-    <mat-accordion>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            Map Filter
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <app-map-marker-filter></app-map-marker-filter>
-      </mat-expansion-panel>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            Cities
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <app-city-jumper [cities]="getCities()"></app-city-jumper>
-      </mat-expansion-panel>
-      <mat-expansion-panel (opened)="isEditorOpen = true" (closed)="isEditorOpen = false">
-        <mat-expansion-panel-header>
-          Editor
-        </mat-expansion-panel-header>
-        <app-map-marker-editor [isEditorEnabled]="isEditorOpen">
-        </app-map-marker-editor>
-      </mat-expansion-panel>
-    </mat-accordion>
+<div>
+  <div class="map__container">
+    <div class="map__wrappper">
+      <pan-zoom [config]="panZoomConfig">
+        <div style="position: relative;">
+          <img class="no-select"
+            src="assets/T_Map_Render.jpg"
+            (dblclick)="onDoubleClick($event)">
+          <div *ngFor="let marker of mapMarkers">
+            <ng-container
+              *ngComponentOutlet="marker.component; injector: marker.injector">
+            </ng-container>
+          </div>
+        </div>
+      </pan-zoom>
+    </div>
+    <div class="map__signature"><span>made with </span><mat-icon style="color:red">favorite</mat-icon><span> by Emmuss</span></div>
+  </div>
+  <div class="map__menu-container">
+    <app-menu-bar #menuBar [isOpen]="true" class="">
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Map Filter
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <app-map-marker-filter></app-map-marker-filter>
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Cities
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <app-city-jumper [cities]="getCities()"></app-city-jumper>
+          </mat-expansion-panel>
+          <mat-expansion-panel (opened)="isEditorOpen = true" (closed)="isEditorOpen = false">
+            <mat-expansion-panel-header>
+              Editor
+            </mat-expansion-panel-header>
+            <app-map-marker-editor [isEditorEnabled]="isEditorOpen">
+            </app-map-marker-editor>
+          </mat-expansion-panel>
+        </mat-accordion>
+    </app-menu-bar>
   </div>
 </div>

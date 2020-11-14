@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { MAP_MENU_WIDTH } from '../app.constants';
 import { MapApiProvider, MapApiRectangle } from '../map-api-provider';
 import { MapMarker } from '../map-marker';
 

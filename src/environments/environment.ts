@@ -2,8 +2,10 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+import { ɵbypassSanitizationTrustResourceUrl } from '@angular/core';
+
 export const environment = {
-  production: false
+  production: true
 };
 
 /*

@@ -37,4 +37,26 @@ export class MapMarkerFilterComponent extends MapMarkerTypeResource implements O
     this._mapMarkerFilterController.emit(this.selectedMapMarkerTypes);
     this._storageProvider.store(this.storageKey, this.selectedMapMarkerTypes);
   }
+
+  selectAll(): void {
+    this.selectedMapMarkerTypes = this.mapMarkerTypes;
+    this.mapMarkerFilterChanged();
+  }
+
+  selectNone(): void {
+    this.selectedMapMarkerTypes = [];
+    this.mapMarkerFilterChanged();
+  }
+
+  selectInvert(): void {
+    const selection: MapMarkerType[] = [];
+    for (const type of this.mapMarkerTypes) {
+      if (this.selectedMapMarkerTypes.indexOf(type) >= 0) {
+        continue;
+      }
+      selection.push(type);
+    }
+    this.selectedMapMarkerTypes = selection;
+    this.mapMarkerFilterChanged();
+  }
 }

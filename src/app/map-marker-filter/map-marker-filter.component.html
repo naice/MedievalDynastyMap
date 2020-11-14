@@ -1,3 +1,14 @@
+<div class="filter__button-container">
+  <div>
+    <button mat-raised-button color="primary" (click)="selectAll()">All</button>
+  </div>
+  <div>
+    <button mat-raised-button color="primary" (click)="selectNone()">None</button>
+  </div>
+  <div>
+    <button mat-raised-button color="primary" (click)="selectInvert()">Invert</button>
+  </div>
+</div>
 <mat-selection-list [(ngModel)]="selectedMapMarkerTypes" (ngModelChange)="mapMarkerFilterChanged()">
   <mat-list-option [value]="markerType" *ngFor="let markerType of mapMarkerTypes">
     <img matListAvatar [src]="getImageSrc(markerType)" class="no-select">

@@ -15,7 +15,7 @@ export enum MapMarkerType {
 
 export class MapMarkerTypeResource {
   public getImageSrc(type: MapMarkerType): string {
-    return `/assets/markers/${type}.png`.toLowerCase();
+    return `assets/markers/${type}.png`.toLowerCase();
   }
   public getImageSrcUrl(type: MapMarkerType): string {
     return `url("${this.getImageSrc(type)}")`;

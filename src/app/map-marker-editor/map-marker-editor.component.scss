@@ -1,0 +1,26 @@
+.editor__reset-container {
+  margin-top: -16px;
+  margin-bottom: 8px;
+  display:flex;
+  width:100%;
+  vertical-align: middle;
+  align-items: center;
+  :nth-child(1) {
+    width: 33.3%;
+  }
+  :nth-child(2) {
+    align-content: middle;
+    width: 66.6%;
+
+    mat-slide-toggle {
+      width: 50px;
+      float:right;
+    }
+  }
+}
+.editor__reset-slide-label {
+  white-space: nowrap;
+  vertical-align: top;
+  display: inline-block;
+  line-height: 24px; // this is defined in .mat-slide-toggle
+}

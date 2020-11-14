@@ -39,8 +39,8 @@ export class MapMarkerEditorComponent extends MapMarkerTypeResource implements O
   private _isEditorEnabled: boolean;
 
   constructor(
+    public mapMarkerStorage: MapMarkerStorage,
     private _mapMarkerEditorController: MapMarkerEditorController,
-    private _mapMarkerStorage: MapMarkerStorage,
     private _mapMarkerFilterController: MapMarkerFilterController,
   ) {
     super();
@@ -76,6 +76,6 @@ export class MapMarkerEditorComponent extends MapMarkerTypeResource implements O
     }
     */
     this._mapMarkerFilterController.ensureEnabled(type);
-    this._mapMarkerStorage.add(mapMarker);
+    this.mapMarkerStorage.add(mapMarker);
   }
 }

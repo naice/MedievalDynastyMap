@@ -50,7 +50,7 @@ import { MapMarkerCityComponent } from './map-marker-city/map-marker-city.compon
 import { CityJumperComponent } from './city-jumper/city-jumper.component';
 import { KVStorageProvider } from './kv-storage/ik-storage-provider';
 import { KVStorageProviderFactory } from './kv-storage/kv-storage-provider-factory';
-
+import { MenuBarComponent } from './menu-bar/menu-bar.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +60,8 @@ import { KVStorageProviderFactory } from './kv-storage/kv-storage-provider-facto
     MapMarkerEditorComponent,
     MapMarkerFilterComponent,
     MapMarkerCityComponent,
-    CityJumperComponent
+    CityJumperComponent,
+    MenuBarComponent
   ],
   imports: [
     FormsModule,

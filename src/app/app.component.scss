@@ -1,34 +1,50 @@
+ .map__burger-bar-container {
+  height: 64px;
+  width: 100%;
+
+  .flex-spacer {
+    flex: 1 1 auto;
+  }
+}
+.map__content-wrapper {
+  width: 100%;
+  height: auto;
+}
 .map__container {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 360px;
+  left: 0;
+  top: 64px;
   right: 0;
+  bottom: 0;
   background-color: black;
 }
-.map__wrappper {
+.map__menu-container {
   position: absolute;
-  top: 16px;
-  bottom: 16px;
-  left: 16px;
-  right: 16px;
+  left: 0;
+  top: 64px;
+  bottom: 0;
+  width: 360px;
+  padding: 8px;
+}
+
+.map__wrappper {
+  width: 100%;
+  height: 100%;
   background-color: black;
 }
 .map__overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: url("/assets/T_Map_MapBg_Alt.png") no-repeat;
+  background: no-repeat;
   background-size: 100% 100%;
   pointer-events: none;
 }
-.menu__container {
+
+.map__signature {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 360px;
-  background-color:gray;
-  padding: 16px;
+  font-size: 14pt;
+  bottom: 16px;
+  right: 16px;
+  text-align: center;
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
 }
