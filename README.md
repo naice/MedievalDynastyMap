@@ -1,6 +1,8 @@
 # MedievalDynastyMap
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KXGFDMWVS8E66) You could buy me a cup of coffee!
+
+Aimed to support players of the game Medieval Dynasty. 
 
 ## Development server
 
