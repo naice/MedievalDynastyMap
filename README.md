@@ -4,7 +4,7 @@
 
 Aimed to support players of the game Medieval Dynasty, this map comes with several nice features that i always missed on those i used in the web before, for example you are able to edit markers as you wish, stored in your local browser. 
 
-
+![sorry no picture for you today](https://github.com/naice/MedievalDynastyMap/blob/master/assets/small_screenshot.png)
 
 ## Development server
 
