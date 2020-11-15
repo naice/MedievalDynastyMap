@@ -1,0 +1,134 @@
+[
+  {
+    "id": "52393950-1c4c-49c0-8bc2-629ae87d0a28",
+    "name": "Baranica",
+    "goods": []
+  },
+  {
+    "id": "493b9fc6-b89a-4ce7-9fb3-ab23eb3246b2",
+    "name": "Borowo",
+    "goods": [
+      {
+        "id": "f6441a05-7a56-47b7-9adb-370b2349c1b5",
+        "price": 1000.0
+      },
+      {
+        "id": "e8814db8-c828-4041-aa68-deb3e600c48c",
+        "price": 500.0
+      }
+    ]
+  },
+  {
+    "id": "6e8b3e82-3216-40b1-aa69-0f51364adf98",
+    "name": "Branica",
+    "goods": []
+  },
+  {
+    "id": "c94d0e52-fe5e-4680-b33a-47d171157ab0",
+    "name": "Denica",
+    "goods": [
+      {
+        "id": "bb96226e-0fa8-4e79-9fb1-fbb55e35c9e4",
+        "price": 2500.0
+      },
+      {
+        "id": "50833df6-c926-404e-a0e5-120bbfc31492",
+        "price": 2000.0
+      },
+      {
+        "id": "7847a8a3-2a26-4128-9957-ab426aab1692",
+        "price": 2000.0
+      },
+      {
+        "id": "49a73fde-c17a-42ea-9c84-a8f83b6e0ad8",
+        "price": 3000.0
+      },
+      {
+        "id": "34d7df2e-826c-45c8-a425-968493b5792e",
+        "price": 3500.0
+      },
+      {
+        "id": "6c24ecac-79b2-4bd8-afa6-d0a0c131cb27",
+        "price": 2500.0
+      }
+    ]
+  },
+  {
+    "id": "4d881a69-e7b0-48f9-9ab9-878f2af0038a",
+    "name": "Jezerica",
+    "goods": []
+  },
+  {
+    "id": "5d0540f5-c558-4e13-9b19-b6d89aa68161",
+    "name": "Lesnica",
+    "goods": []
+  },
+  {
+    "id": "1f5776f8-6c9a-43db-92a2-de1fd63c4111",
+    "name": "Rolnica",
+    "goods": [
+      {
+        "id": "a7073dc4-ac0d-498c-a9b2-1fc7a9aaf886",
+        "price": 1500.0
+      },
+      {
+        "id": "b53af268-4656-431b-be6e-760a883e403b",
+        "price": 1000.0
+      },
+      {
+        "id": "f6441a05-7a56-47b7-9adb-370b2349c1b5",
+        "price": 1000.0
+      },
+      {
+        "id": "e8814db8-c828-4041-aa68-deb3e600c48c",
+        "price": 500.0
+      }
+    ]
+  },
+  {
+    "id": "9920ed4a-8bf7-4174-9456-ce618129f39d",
+    "name": "Rajmund",
+    "goods": [
+      {
+        "id": "a7073dc4-ac0d-498c-a9b2-1fc7a9aaf886",
+        "price": 1500.0
+      },
+      {
+        "id": "b53af268-4656-431b-be6e-760a883e403b",
+        "price": 1000.0
+      }
+    ]
+  },
+  {
+    "id": "9a4b1c3a-0abb-44f8-b3b8-be56e7bec3c5",
+    "name": "Sambor",
+    "goods": []
+  },
+  {
+    "id": "c60c7f48-a3bf-4c15-8b34-0843217b25bf",
+    "name": "Gostovia",
+    "goods": [
+      {
+        "id": "94539219-0769-4751-807d-ae6a3b970104",
+        "price": 5000.0
+      },
+      {
+        "id": "ca6619ea-15e3-4865-a64e-80f4b9ef5061",
+        "price": 4500.0
+      },
+      {
+        "id": "48497c6c-c70a-420b-b3b6-99e162dd5b01",
+        "price": 2000.0
+      },
+      {
+        "id": "32da2582-a6d8-4e86-838e-ed360245e749",
+        "price": 1500.0
+      }
+    ]
+  },
+  {
+    "id": "5610feeb-bd1f-4518-a5a6-32af7a778a67",
+    "name": "Hornica",
+    "goods": []
+  }
+]
