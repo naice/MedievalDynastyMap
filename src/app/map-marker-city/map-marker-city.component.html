@@ -8,7 +8,7 @@
   [style.top.px]="mapMarker.origin.y - (height / 2)">
   <!-- 363,48 -->
   <div class="no-select map-marker-city__marker-title">
-    {{city.name}}
+    <a (click)="dialogProvider.showCityDialog(this.city)" style="cursor: pointer;">{{city.name}}</a>
   </div>
   <button
     *ngIf="isEditMode"

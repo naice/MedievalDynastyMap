@@ -1,9 +1,9 @@
 import { EventEmitter, Injectable } from '@angular/core';
 import { KVStorageProvider } from './kv-storage/ik-storage-provider';
 import { MapMarker } from './map-marker';
-import StaticMapMarkers from '../assets/data/map-markers.json';
 import { environment } from 'src/environments/environment';
 import { MapMarkerType } from './map-marker-type.enum';
+import { CityData, MapMarkerData } from './static-data';
 
 @Injectable({
   providedIn: 'root',
@@ -15,7 +15,9 @@ export class MapMarkerStorage {
   public storageKey: string = 'mapMarkersStorage';
 
   constructor(
-    private _storageProvider: KVStorageProvider
+    private _storageProvider: KVStorageProvider,
+    private mapMarkerData: MapMarkerData,
+    private _cityData: CityData,
   ) {}
 
   public async load(forceResetDefault: boolean = false): Promise<void> {
@@ -26,12 +28,15 @@ export class MapMarkerStorage {
 
     // try load from static map markers
     if (forceResetDefault || loadedMarkers === null) {
+      console.log('no map markers, loading from static data');
       if (environment.production) {
-        loadedMarkers = StaticMapMarkers as MapMarker[];
+        loadedMarkers = this.mapMarkerData.mapMarkers;
       } else {
         console.log('could not load map markers');
         return;
       }
+    } else {
+      await this.tryUpgrade01(loadedMarkers);
     }
 
     for (const marker of loadedMarkers) {
@@ -39,8 +44,31 @@ export class MapMarkerStorage {
     }
   }
 
+  async tryUpgrade01(markers: MapMarker[]): Promise<void> {
+    if (!markers.some(marker => marker.type === MapMarkerType.CITY && !marker.payloadId)) {
+      console.log('upgrade 01 not needed');
+      return;
+    }
+    console.log('doing upgrade 01');
+    markers
+      .filter(marker => marker.type === MapMarkerType.CITY && !marker.payloadId)
+      .forEach(marker => marker.payloadId = this._cityData.cities.find(city => {
+        let markerCityName = (marker as any).payload.name;
+        if (markerCityName === "Raimund") {
+          markerCityName = "Rajmund";
+        }
+        return city.name === markerCityName;
+      }).id);
+
+    this.storeInternal(markers);
+  }
+
   public store(): Promise<boolean> {
-    return this._storageProvider.store(this.storageKey, this.markers).toPromise();
+    return this.storeInternal(this.markers);
+  }
+
+  private storeInternal(markers: MapMarker[]): Promise<boolean> {
+    return this._storageProvider.store(this.storageKey, markers).toPromise();
   }
 
   private addInternal(marker: MapMarker) {

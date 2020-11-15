@@ -1,9 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { MapMarker, MapMarkerPayloadCity } from '../map-marker';
+import { Component } from '@angular/core';
+import { CityDetailDialogProvider } from '../city-detail-dialog-provider';
+import { MapMarker } from '../map-marker';
 import { MapMarkerBaseComponent } from '../map-marker-base-component';
 import { MapMarkerEditorController } from '../map-marker-editor/map-marker-editor.controller';
 import { MapMarkerFilterController } from '../map-marker-filter/map-marker-filter.controller';
 import { MapMarkerStorage } from '../map-marker-storage';
+import { City } from '../static-data';
 
 @Component({
   selector: 'app-map-marker-city',
@@ -12,16 +14,16 @@ import { MapMarkerStorage } from '../map-marker-storage';
 })
 export class MapMarkerCityComponent extends MapMarkerBaseComponent {
 
-  public city: MapMarkerPayloadCity;
-
   constructor(
     mapMarker: MapMarker,
     mapMarkerStorage: MapMarkerStorage,
     mapMarkerFilterController: MapMarkerFilterController,
     mapMarkerEditorController: MapMarkerEditorController,
+
+    public city: City,
+    public dialogProvider: CityDetailDialogProvider,
   ) {
     super(mapMarker, mapMarkerStorage, mapMarkerFilterController, mapMarkerEditorController);
-    this.city = mapMarker.payload as MapMarkerPayloadCity;
     super.width = 512;
     super.height = 91;
   }

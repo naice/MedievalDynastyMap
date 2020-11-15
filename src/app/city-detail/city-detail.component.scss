@@ -1,0 +1,26 @@
+:host {
+  background-color: #303030;
+}
+
+.city-detail__goods-table {
+  min-width: 600px;
+}
+.city-detail__content {
+  padding: 1px 24px;
+  min-width: 600px;
+  max-height: 600px;
+}
+.city-detail__data {
+  margin-bottom: 24px;
+
+  div:nth-child(1) {
+    margin: 8px;
+  }
+}
+
+.mat-column-name {
+  width: 80%;
+}
+.mat-column-price {
+  width: 20%;
+}

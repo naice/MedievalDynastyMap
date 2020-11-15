@@ -1,10 +1,10 @@
 import * as _ from 'lodash';
-import { Component, Injector, Input, OnInit } from '@angular/core';
+import { Component, Injector, Input, OnInit, StaticProvider } from '@angular/core';
 import { UUID } from 'angular2-uuid';
 import { PanZoomConfig, PanZoomAPI, PanZoomConfigOptions } from 'ngx-panzoom';
 import { Subscription } from 'rxjs';
 import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
-import { MapMarker, MapMarkerOrigin, MapMarkerPayloadCity } from './map-marker';
+import { MapMarker, MapMarkerOrigin } from './map-marker';
 import { MapMarkerStorage } from './map-marker-storage';
 import { MapMarkerType, MapMarkerTypeResource } from './map-marker-type.enum';
 import { MapMarkerComponent } from './map-marker/map-marker.component';
@@ -12,6 +12,7 @@ import { MapMarkerFilterController } from './map-marker-filter/map-marker-filter
 import { MapMarkerCityComponent } from './map-marker-city/map-marker-city.component';
 import { MapApiProvider } from './map-api-provider';
 import { MapMarkerEditorController } from './map-marker-editor/map-marker-editor.controller';
+import { City, CityData } from './static-data';
 
 export interface MapMarkerContainer {
   mapMarker: MapMarker;
@@ -31,7 +32,7 @@ export class AppComponent implements OnInit {
     neutralZoomLevel: 5,
     scalePerZoomLevel: 1.5,
     freeMouseWheel: false,
-    invertMouseWheel: false,
+    invertMouseWheel: true,
     zoomButtonIncrement: 0.4,
     dynamicContentDimensions: true,
     zoomOnDoubleClick: false,
@@ -51,6 +52,7 @@ export class AppComponent implements OnInit {
     private _mapMarkerFilterController: MapMarkerFilterController,
     private _mapApiProvider: MapApiProvider,
     private _mapMarkerEditorController: MapMarkerEditorController,
+    private _cityData: CityData,
   ) {
     this._markerStorageAddedSubscription = _mapMarkerStorage.addedEvent.subscribe((marker: MapMarker) => this.addMapMarker(marker));
     this._markerStorageRemovedSubscription = _mapMarkerStorage.removedEvent.subscribe((marker: MapMarker) => this.removeMapMarker(marker));
@@ -86,9 +88,7 @@ export class AppComponent implements OnInit {
 
   addMapMarker(mapMarker: MapMarker): void {
     this.mapMarkers.push(
-      this.createMapMarkerContainer(
-        mapMarker,
-        this.getComponentTypeByMapMarkerType(mapMarker.type)));
+      this.createMapMarkerContainer(mapMarker));
   }
 
   removeMapMarker(mapMarker: MapMarker): void {
@@ -100,14 +100,24 @@ export class AppComponent implements OnInit {
     this.mapMarkers = [];
   }
 
-  createMapMarkerContainer(mapMarker: MapMarker, component: any): MapMarkerContainer {
+  createMapMarkerContainer(mapMarker: MapMarker): MapMarkerContainer {
+    const providers: StaticProvider[] = [
+      { provide: MapMarker, useValue: mapMarker }
+    ];
+    let component: any = MapMarkerComponent;
+    switch (mapMarker.type) {
+      case MapMarkerType.CITY:
+        component = MapMarkerCityComponent;
+        console.log(mapMarker.payloadId);
+        providers.push({ provide: City, useValue: this._cityData.cities.find(city => city.id == mapMarker.payloadId) });
+        break;
+      default: break;
+    }
     let markerContainer: MapMarkerContainer = {
       component,
       mapMarker,
       injector: Injector.create({
-        providers:[
-          { provide: MapMarker, useValue: mapMarker },
-        ],
+        providers,
         parent:this.injector
       })
     };

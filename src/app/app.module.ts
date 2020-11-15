@@ -51,6 +51,8 @@ import { CityJumperComponent } from './city-jumper/city-jumper.component';
 import { KVStorageProvider } from './kv-storage/ik-storage-provider';
 import { KVStorageProviderFactory } from './kv-storage/kv-storage-provider-factory';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
+import { CityDetailComponent } from './city-detail/city-detail.component';
+import { GoodsToItemsPipe } from './goods-items.pipe';
 
 @NgModule({
   declarations: [
@@ -61,7 +63,9 @@ import { MenuBarComponent } from './menu-bar/menu-bar.component';
     MapMarkerFilterComponent,
     MapMarkerCityComponent,
     CityJumperComponent,
-    MenuBarComponent
+    MenuBarComponent,
+    CityDetailComponent,
+    GoodsToItemsPipe
   ],
   imports: [
     FormsModule,
