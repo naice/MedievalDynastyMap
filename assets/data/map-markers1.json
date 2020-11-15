@@ -6,7 +6,6 @@
       "y": 2229.0
     },
     "type": "Wolf",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -16,7 +15,6 @@
       "y": 3809.0
     },
     "type": "Wisent",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -26,7 +24,6 @@
       "y": 3734.0
     },
     "type": "Boar",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -36,7 +33,6 @@
       "y": 3515.0
     },
     "type": "Buck",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -46,7 +42,6 @@
       "y": 3539.0
     },
     "type": "Doe",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -56,7 +51,6 @@
       "y": 3572.0
     },
     "type": "Rabbit",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -66,7 +60,6 @@
       "y": 4268.0
     },
     "type": "Wolf",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -76,7 +69,6 @@
       "y": 4758.0
     },
     "type": "Bear",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -86,7 +78,6 @@
       "y": 4770.0
     },
     "type": "Cave",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -96,7 +87,6 @@
       "y": 3609.0
     },
     "type": "Clay Deposit",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -106,7 +96,6 @@
       "y": 4443.0
     },
     "type": "Buck",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -116,7 +105,6 @@
       "y": 4454.0
     },
     "type": "Doe",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -126,7 +114,6 @@
       "y": 3790.0
     },
     "type": "City",
-    "payload": null,
     "payloadId": "c60c7f48-a3bf-4c15-8b34-0843217b25bf"
   },
   {
@@ -136,7 +123,6 @@
       "y": 3334.0
     },
     "type": "City",
-    "payload": null,
     "payloadId": "493b9fc6-b89a-4ce7-9fb3-ab23eb3246b2"
   },
   {
@@ -146,7 +132,6 @@
       "y": 2431.0
     },
     "type": "City",
-    "payload": null,
     "payloadId": "52393950-1c4c-49c0-8bc2-629ae87d0a28"
   },
   {
@@ -156,7 +141,6 @@
       "y": 2345.0
     },
     "type": "City",
-    "payload": null,
     "payloadId": "6e8b3e82-3216-40b1-aa69-0f51364adf98"
   },
   {
@@ -166,7 +150,6 @@
       "y": 2513.0
     },
     "type": "City",
-    "payload": null,
     "payloadId": "1f5776f8-6c9a-43db-92a2-de1fd63c4111"
   },
   {
@@ -176,7 +159,6 @@
       "y": 4220.0
     },
     "type": "City",
-    "payload": null,
     "payloadId": "5d0540f5-c558-4e13-9b19-b6d89aa68161"
   },
   {
@@ -186,7 +168,6 @@
       "y": 3728.0
     },
     "type": "City",
-    "payload": null,
     "payloadId": "c94d0e52-fe5e-4680-b33a-47d171157ab0"
   },
   {
@@ -196,7 +177,6 @@
       "y": 5701.0
     },
     "type": "City",
-    "payload": null,
     "payloadId": "4d881a69-e7b0-48f9-9ab9-878f2af0038a"
   },
   {
@@ -206,7 +186,6 @@
       "y": 5577.0
     },
     "type": "City",
-    "payload": null,
     "payloadId": "5610feeb-bd1f-4518-a5a6-32af7a778a67"
   },
   {
@@ -216,7 +195,6 @@
       "y": 2370.0
     },
     "type": "Boar",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -226,7 +204,6 @@
       "y": 2293.0
     },
     "type": "Clay Deposit",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -236,7 +213,6 @@
       "y": 2127.0
     },
     "type": "Doe",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -246,7 +222,6 @@
       "y": 2021.0
     },
     "type": "Bear",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -256,7 +231,6 @@
       "y": 2008.0
     },
     "type": "Wolf",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -266,7 +240,6 @@
       "y": 2848.0
     },
     "type": "Wisent",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -276,7 +249,6 @@
       "y": 2911.0
     },
     "type": "Wolf",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -286,7 +258,6 @@
       "y": 2772.0
     },
     "type": "Buck",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -296,7 +267,6 @@
       "y": 2973.0
     },
     "type": "Rabbit",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -306,7 +276,6 @@
       "y": 2705.0
     },
     "type": "Boar",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -316,7 +285,6 @@
       "y": 3005.0
     },
     "type": "Fox",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -326,7 +294,6 @@
       "y": 2918.0
     },
     "type": "Clay Deposit",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -336,7 +303,6 @@
       "y": 2885.0
     },
     "type": "Wisent",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -346,7 +312,6 @@
       "y": 2015.0
     },
     "type": "Rabbit",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -356,7 +321,6 @@
       "y": 1714.0
     },
     "type": "Bear",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -366,7 +330,6 @@
       "y": 2172.0
     },
     "type": "Cave",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -376,7 +339,6 @@
       "y": 2255.0
     },
     "type": "City",
-    "payload": null,
     "payloadId": "9920ed4a-8bf7-4174-9456-ce618129f39d"
   },
   {
@@ -386,7 +348,6 @@
       "y": 2501.0
     },
     "type": "City",
-    "payload": null,
     "payloadId": "9a4b1c3a-0abb-44f8-b3b8-be56e7bec3c5"
   },
   {
@@ -396,7 +357,6 @@
       "y": 1870.0
     },
     "type": "Buck",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -406,7 +366,6 @@
       "y": 1854.0
     },
     "type": "Rabbit",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -416,7 +375,6 @@
       "y": 2127.0
     },
     "type": "Fox",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -426,7 +384,6 @@
       "y": 2407.0
     },
     "type": "Clay Deposit",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -436,7 +393,6 @@
       "y": 2774.0
     },
     "type": "Wolf",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -446,7 +402,6 @@
       "y": 2940.0
     },
     "type": "Doe",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -456,7 +411,6 @@
       "y": 3036.0
     },
     "type": "Rabbit",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -466,7 +420,6 @@
       "y": 3429.0
     },
     "type": "Fox",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -476,7 +429,6 @@
       "y": 3818.0
     },
     "type": "Fox",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -486,7 +438,6 @@
       "y": 4402.0
     },
     "type": "Wisent",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -496,7 +447,6 @@
       "y": 4553.0
     },
     "type": "Buck",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -506,7 +456,6 @@
       "y": 4676.0
     },
     "type": "Rabbit",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -516,7 +465,6 @@
       "y": 4809.0
     },
     "type": "Cave",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -526,7 +474,6 @@
       "y": 4873.0
     },
     "type": "Bear",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -536,7 +483,6 @@
       "y": 4694.0
     },
     "type": "Buck",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -546,7 +492,6 @@
       "y": 5146.0
     },
     "type": "Boar",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -556,7 +501,6 @@
       "y": 5791.0
     },
     "type": "Wisent",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -566,7 +510,6 @@
       "y": 6118.0
     },
     "type": "Wolf",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -576,7 +519,6 @@
       "y": 6160.0
     },
     "type": "Buck",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -586,7 +528,6 @@
       "y": 5644.0
     },
     "type": "Wolf",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -596,7 +537,6 @@
       "y": 6202.0
     },
     "type": "Boar",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -606,7 +546,6 @@
       "y": 6231.0
     },
     "type": "Rabbit",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -616,7 +555,6 @@
       "y": 5396.0
     },
     "type": "Fox",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -626,7 +564,6 @@
       "y": 5224.0
     },
     "type": "Wolf",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -636,7 +573,6 @@
       "y": 4848.0
     },
     "type": "Wisent",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -646,7 +582,6 @@
       "y": 5702.0
     },
     "type": "Bear",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -656,7 +591,6 @@
       "y": 5623.0
     },
     "type": "Cave",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -666,7 +600,6 @@
       "y": 5380.0
     },
     "type": "Buck",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -676,7 +609,6 @@
       "y": 5082.0
     },
     "type": "Wisent",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -686,7 +618,6 @@
       "y": 4989.0
     },
     "type": "Boar",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -696,7 +627,6 @@
       "y": 5262.0
     },
     "type": "Fox",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -706,7 +636,6 @@
       "y": 5208.0
     },
     "type": "Clay Deposit",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -716,7 +645,6 @@
       "y": 4287.0
     },
     "type": "Clay Deposit",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -726,7 +654,6 @@
       "y": 4117.0
     },
     "type": "Fox",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -736,7 +663,6 @@
       "y": 3970.0
     },
     "type": "Buck",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -746,7 +672,6 @@
       "y": 3690.0
     },
     "type": "Rabbit",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -756,7 +681,6 @@
       "y": 3860.0
     },
     "type": "Wolf",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -766,7 +690,6 @@
       "y": 4995.0
     },
     "type": "Wolf",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -776,7 +699,6 @@
       "y": 5539.0
     },
     "type": "Cave",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -786,7 +708,6 @@
       "y": 3983.0
     },
     "type": "Clay Deposit",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -796,7 +717,6 @@
       "y": 3552.0
     },
     "type": "Wolf",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -806,7 +726,6 @@
       "y": 4305.0
     },
     "type": "Clay Deposit",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -816,7 +735,6 @@
       "y": 4187.0
     },
     "type": "Rabbit",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -826,7 +744,6 @@
       "y": 4466.0
     },
     "type": "Fox",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -836,7 +753,6 @@
       "y": 4753.0
     },
     "type": "Wisent",
-    "payload": null,
     "payloadId": null
   },
   {
@@ -846,7 +762,6 @@
       "y": 4411.0
     },
     "type": "Fox",
-    "payload": null,
     "payloadId": null
   }
 ]
