@@ -45,6 +45,10 @@ export class Person {
 @Injectable({ providedIn: 'root' })
 export class CityData {
   public cities: City[] = StaticCities as City[];
+
+  public getCityBy(marker: MapMarker): City {
+    return this.cities.find(city => city.id == marker.payloadId);
+  }
 }
 @Injectable({ providedIn: 'root' })
 export class ItemData {

@@ -1,7 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MAP_MENU_WIDTH } from '../app.constants';
+import { CityDetailDialogProvider } from '../city-detail-dialog-provider';
 import { MapApiProvider, MapApiRectangle } from '../map-api-provider';
 import { MapMarker } from '../map-marker';
+import { CityData } from '../static-data';
 
 @Component({
   selector: 'app-city-jumper',
@@ -13,7 +15,9 @@ export class CityJumperComponent implements OnInit {
   @Input() cities: MapMarker[];
 
   constructor(
-    private _mapApiProvider: MapApiProvider
+    private _mapApiProvider: MapApiProvider,
+    public cityData: CityData,
+    public dialogProvider: CityDetailDialogProvider,
   ) { }
 
   ngOnInit(): void {
@@ -29,5 +33,9 @@ export class CityJumperComponent implements OnInit {
     };
     console.log('jumping to', rect);
     this._mapApiProvider.navigateToRect(rect);
+  }
+  onOpenCityDetail(event: any, marker: MapMarker) {
+    event.stopPropagation();
+    this.dialogProvider.showCityDialog(this.cityData.getCityBy(marker))
   }
 }

@@ -8,7 +8,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build-prod": "ng build --prod --base-href https://naice.github.io/MedievalDynastyMap/",
+    "publish": "angular-cli-ghpages --no-silent"
   },
   "private": true,
   "dependencies": {
