@@ -12,7 +12,7 @@ import { CityData } from '../static-data';
 })
 export class CityJumperComponent implements OnInit {
 
-  @Input() cities: MapMarker[];
+  @Input() mapMarkers: MapMarker[];
 
   constructor(
     private _mapApiProvider: MapApiProvider,
@@ -21,6 +21,10 @@ export class CityJumperComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+  }
+
+  getCityName(mapMarker: MapMarker): string {
+    return this.cityData.getCityBy(mapMarker)?.name;
   }
   onNavigateToCity(mapMarker: MapMarker) {
     const width = window.innerWidth * 1.8;

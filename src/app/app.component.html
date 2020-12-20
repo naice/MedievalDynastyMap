@@ -49,7 +49,7 @@
                 Cities
               </mat-panel-title>
             </mat-expansion-panel-header>
-            <app-city-jumper [cities]="getCities()"></app-city-jumper>
+            <app-city-jumper [mapMarkers]="getCities()"></app-city-jumper>
           </mat-expansion-panel>
           <mat-expansion-panel (opened)="isEditorOpen = true" (closed)="isEditorOpen = false">
             <mat-expansion-panel-header>

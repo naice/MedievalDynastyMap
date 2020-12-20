@@ -1,9 +1,9 @@
 <mat-nav-list>
   <h3 matSubheader>Select a city to jump to</h3>
-	<a mat-list-item *ngFor="let city of cities" (click)="onNavigateToCity(city)">
-    <span matLine>{{city.payload.name}}</span>
+	<a mat-list-item *ngFor="let marker of mapMarkers" (click)="onNavigateToCity(marker)">
+    <span matLine>{{getCityName(marker)}}</span>
 
-    <button mat-icon-button (click)="onOpenCityDetail($event, city)">
+    <button mat-icon-button (click)="onOpenCityDetail($event, marker)">
       <mat-icon class="mat-24">read_more</mat-icon>
     </button>
 	</a>
