@@ -1,2 +1,2 @@
 
-export const MAP_MENU_WIDTH = 360;
+export const MAP_MENU_WIDTH = 376;
