@@ -1,0 +1,852 @@
+[
+  {
+    "id": "910cc6ca-7c33-ec65-a80c-34054d775fc8",
+    "origin": {
+      "x": 3452.0,
+      "y": 2229.0
+    },
+    "type": "Wolf",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "0783cc55-7f89-48fb-2c31-70dc838c7ae2",
+    "origin": {
+      "x": 3787.0,
+      "y": 3809.0
+    },
+    "type": "Wisent",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "03613d4d-f822-3022-95db-fad061144f8a",
+    "origin": {
+      "x": 3351.0,
+      "y": 3734.0
+    },
+    "type": "Boar",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "3db6af0a-77c6-d8c9-6a93-afc7e2de3690",
+    "origin": {
+      "x": 3908.0,
+      "y": 3515.0
+    },
+    "type": "Buck",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "209d676a-b700-042d-28c7-102eb91294f4",
+    "origin": {
+      "x": 3591.0,
+      "y": 3539.0
+    },
+    "type": "Doe",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "e6b5a2d6-3443-4a96-c6ce-586e18ba8ecf",
+    "origin": {
+      "x": 4253.0,
+      "y": 3572.0
+    },
+    "type": "Rabbit",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "8b807db3-f1cd-18be-0f79-8929821c9feb",
+    "origin": {
+      "x": 3945.0,
+      "y": 4268.0
+    },
+    "type": "Wolf",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "f0377448-4bc4-76e9-8b09-589defd33729",
+    "origin": {
+      "x": 4603.0,
+      "y": 4758.0
+    },
+    "type": "Bear",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "f057ee2e-2763-9496-274d-744a040b69e0",
+    "origin": {
+      "x": 4540.0,
+      "y": 4770.0
+    },
+    "type": "Cave",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "46c45b68-fe99-6e31-d9c4-c9946c781ef8",
+    "origin": {
+      "x": 4649.0,
+      "y": 3609.0
+    },
+    "type": "Clay Deposit",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "c7949537-54bd-594e-a017-f3a558717a3c",
+    "origin": {
+      "x": 4862.0,
+      "y": 4443.0
+    },
+    "type": "Buck",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "0c065fe5-24e4-a4eb-e3e7-b9edadf2c5e5",
+    "origin": {
+      "x": 4887.0,
+      "y": 4454.0
+    },
+    "type": "Doe",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "16338f58-1224-3791-9804-93c270e12086",
+    "origin": {
+      "x": 5049.0,
+      "y": 3790.0
+    },
+    "type": "City",
+    "payload": null,
+    "payloadId": "c60c7f48-a3bf-4c15-8b34-0843217b25bf"
+  },
+  {
+    "id": "0eabdf3e-139a-18c8-5e19-abc2ef3b030c",
+    "origin": {
+      "x": 5135.0,
+      "y": 3334.0
+    },
+    "type": "City",
+    "payload": null,
+    "payloadId": "493b9fc6-b89a-4ce7-9fb3-ab23eb3246b2"
+  },
+  {
+    "id": "1778110a-6e04-a6b1-5530-d45fb7a8d453",
+    "origin": {
+      "x": 4446.0,
+      "y": 2431.0
+    },
+    "type": "City",
+    "payload": null,
+    "payloadId": "52393950-1c4c-49c0-8bc2-629ae87d0a28"
+  },
+  {
+    "id": "41cb2e0f-2cf3-9f4a-16b2-afaad2b960e3",
+    "origin": {
+      "x": 3848.0,
+      "y": 2345.0
+    },
+    "type": "City",
+    "payload": null,
+    "payloadId": "6e8b3e82-3216-40b1-aa69-0f51364adf98"
+  },
+  {
+    "id": "a46ebbe9-6df6-1490-862d-223554a5594b",
+    "origin": {
+      "x": 2427.0,
+      "y": 2513.0
+    },
+    "type": "City",
+    "payload": null,
+    "payloadId": "1f5776f8-6c9a-43db-92a2-de1fd63c4111"
+  },
+  {
+    "id": "1ba3d4b1-c482-f004-cf99-53043fc55478",
+    "origin": {
+      "x": 2190.0,
+      "y": 4220.0
+    },
+    "type": "City",
+    "payload": null,
+    "payloadId": "5d0540f5-c558-4e13-9b19-b6d89aa68161"
+  },
+  {
+    "id": "0a9160eb-44c8-8540-427c-f72e6c3b5dac",
+    "origin": {
+      "x": 3131.0,
+      "y": 3728.0
+    },
+    "type": "City",
+    "payload": null,
+    "payloadId": "c94d0e52-fe5e-4680-b33a-47d171157ab0"
+  },
+  {
+    "id": "fb58d9a8-37c3-e3b2-27ba-5d2635dffaad",
+    "origin": {
+      "x": 3172.0,
+      "y": 5701.0
+    },
+    "type": "City",
+    "payload": null,
+    "payloadId": "4d881a69-e7b0-48f9-9ab9-878f2af0038a"
+  },
+  {
+    "id": "ab6730d6-cf25-a0d8-3f0a-dcf47e270e77",
+    "origin": {
+      "x": 5093.0,
+      "y": 5577.0
+    },
+    "type": "City",
+    "payload": null,
+    "payloadId": "5610feeb-bd1f-4518-a5a6-32af7a778a67"
+  },
+  {
+    "id": "a1f68ee8-6263-854f-9cdb-3b2cfd2e85a2",
+    "origin": {
+      "x": 5407.0,
+      "y": 2370.0
+    },
+    "type": "Boar",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "8341289a-1260-72f4-8cab-e0dfd0846776",
+    "origin": {
+      "x": 6111.0,
+      "y": 2293.0
+    },
+    "type": "Clay Deposit",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "5c5e2234-aef9-a3a1-ed28-b8612fd28b9c",
+    "origin": {
+      "x": 5914.0,
+      "y": 2127.0
+    },
+    "type": "Doe",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "3f9f2cac-710a-e3f7-7ac3-5e3c2b84bd32",
+    "origin": {
+      "x": 5570.0,
+      "y": 2021.0
+    },
+    "type": "Bear",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "1b68fc83-bcf5-5765-9a3a-0a25fa14e3f3",
+    "origin": {
+      "x": 4564.0,
+      "y": 2008.0
+    },
+    "type": "Wolf",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "fb1d4f1d-24a8-f37a-e670-4586294bf5d2",
+    "origin": {
+      "x": 5996.0,
+      "y": 2848.0
+    },
+    "type": "Wisent",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "92e88b87-ef70-472e-9bb5-4f4df7bf1551",
+    "origin": {
+      "x": 5487.0,
+      "y": 2911.0
+    },
+    "type": "Wolf",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "e6a7742b-c259-3d11-e92a-cdbe50c1d803",
+    "origin": {
+      "x": 4951.0,
+      "y": 2772.0
+    },
+    "type": "Buck",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "0ccb55f8-7763-a3b9-b726-636cc95944c0",
+    "origin": {
+      "x": 4291.0,
+      "y": 2973.0
+    },
+    "type": "Rabbit",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "0d997eb3-c7e2-530d-9f10-ac13252968af",
+    "origin": {
+      "x": 4091.0,
+      "y": 2705.0
+    },
+    "type": "Boar",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "dc510f2a-5afd-4281-a8da-3b2dd039cd43",
+    "origin": {
+      "x": 3949.0,
+      "y": 3005.0
+    },
+    "type": "Fox",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "e0c45e56-77d3-1d49-2998-18ba8c08c6e5",
+    "origin": {
+      "x": 3783.0,
+      "y": 2918.0
+    },
+    "type": "Clay Deposit",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "8f6d0087-54b3-fb6a-92df-dff9c397d4c7",
+    "origin": {
+      "x": 3598.0,
+      "y": 2885.0
+    },
+    "type": "Wisent",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "385377bb-0153-e896-9ef5-7b48019dfa84",
+    "origin": {
+      "x": 4177.0,
+      "y": 2015.0
+    },
+    "type": "Rabbit",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "a25681c9-7e54-03c3-c8f1-55bcc0da79d1",
+    "origin": {
+      "x": 4086.0,
+      "y": 1714.0
+    },
+    "type": "Bear",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "1273dbc4-ee08-162e-77a2-ca8c3f9a2ab0",
+    "origin": {
+      "x": 3880.0,
+      "y": 2172.0
+    },
+    "type": "Cave",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "d82c6649-f495-977d-1b41-1246dae945a1",
+    "origin": {
+      "x": 3159.0,
+      "y": 2255.0
+    },
+    "type": "City",
+    "payload": null,
+    "payloadId": "9920ed4a-8bf7-4174-9456-ce618129f39d"
+  },
+  {
+    "id": "52aa1b47-8bfd-69f4-e0d1-6ef863903b76",
+    "origin": {
+      "x": 5705.0,
+      "y": 2501.0
+    },
+    "type": "City",
+    "payload": null,
+    "payloadId": "9a4b1c3a-0abb-44f8-b3b8-be56e7bec3c5"
+  },
+  {
+    "id": "1fa45ab1-bd62-32b6-87d9-aede4a3f898b",
+    "origin": {
+      "x": 2919.0,
+      "y": 1870.0
+    },
+    "type": "Buck",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "a85c9799-62f2-29b1-2684-68e6fcf461df",
+    "origin": {
+      "x": 2332.0,
+      "y": 1854.0
+    },
+    "type": "Rabbit",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "6755072b-bab6-0c73-550a-09238f7894b9",
+    "origin": {
+      "x": 2332.0,
+      "y": 2127.0
+    },
+    "type": "Fox",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "e47655e5-dbd8-5750-5203-8285a907e781",
+    "origin": {
+      "x": 2801.0,
+      "y": 2407.0
+    },
+    "type": "Clay Deposit",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "eb9d9ea3-2c6f-0e58-4f5e-8fe633c38dc4",
+    "origin": {
+      "x": 2769.0,
+      "y": 2774.0
+    },
+    "type": "Wolf",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "a397ac51-c4a0-0f15-0df7-54eb8a663b92",
+    "origin": {
+      "x": 2345.0,
+      "y": 2940.0
+    },
+    "type": "Doe",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "778496f1-aaf3-e7f3-bd29-d8798fb216e1",
+    "origin": {
+      "x": 3028.0,
+      "y": 3036.0
+    },
+    "type": "Rabbit",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "b9ccb3dc-7abd-d14b-ab6e-aabad04647f2",
+    "origin": {
+      "x": 3071.0,
+      "y": 3429.0
+    },
+    "type": "Fox",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "6c495026-e8ec-f8c9-3ebf-16bfa094ea10",
+    "origin": {
+      "x": 4113.0,
+      "y": 3818.0
+    },
+    "type": "Fox",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "fdf885c7-408f-5b58-e2cb-5c756ee66596",
+    "origin": {
+      "x": 4095.0,
+      "y": 4402.0
+    },
+    "type": "Wisent",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "10c36c75-c7ec-a953-ab39-12a3eb1a4419",
+    "origin": {
+      "x": 3566.0,
+      "y": 4553.0
+    },
+    "type": "Buck",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "7e506421-5d39-a302-ce21-815b48cdf2f8",
+    "origin": {
+      "x": 3854.0,
+      "y": 4676.0
+    },
+    "type": "Rabbit",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "98e568b5-3a53-4ffd-50d7-bfab750ddd80",
+    "origin": {
+      "x": 2132.0,
+      "y": 4809.0
+    },
+    "type": "Cave",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "f17e4382-f489-c855-1e65-9b587e077f43",
+    "origin": {
+      "x": 2019.0,
+      "y": 4873.0
+    },
+    "type": "Bear",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "4185eab4-7e03-7e3f-7894-18c360807a83",
+    "origin": {
+      "x": 2039.0,
+      "y": 4694.0
+    },
+    "type": "Buck",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "45cdb8f3-b565-b817-45c4-069c4f1134f4",
+    "origin": {
+      "x": 2012.0,
+      "y": 5146.0
+    },
+    "type": "Boar",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "fde83386-edda-21e9-2040-2586fa4baa43",
+    "origin": {
+      "x": 2474.0,
+      "y": 5791.0
+    },
+    "type": "Wisent",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "f826917a-5f1e-71ef-1c57-abc6c72269d7",
+    "origin": {
+      "x": 2180.0,
+      "y": 6118.0
+    },
+    "type": "Wolf",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "4dd7ff47-75bc-2c32-c9e0-63e9444022f4",
+    "origin": {
+      "x": 3111.0,
+      "y": 6160.0
+    },
+    "type": "Buck",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "05b7a4cd-6ffa-fd4e-82cd-6cd65fc83aa2",
+    "origin": {
+      "x": 3960.0,
+      "y": 5644.0
+    },
+    "type": "Wolf",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "0f146f87-7a3e-1f20-e4dd-95e5b840c80e",
+    "origin": {
+      "x": 3651.0,
+      "y": 6202.0
+    },
+    "type": "Boar",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "44e75574-d0ba-2f34-5d33-e7bcef98cb38",
+    "origin": {
+      "x": 3954.0,
+      "y": 6231.0
+    },
+    "type": "Rabbit",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "031e48d3-61ed-de85-0248-8bd20f19d318",
+    "origin": {
+      "x": 4587.0,
+      "y": 5396.0
+    },
+    "type": "Fox",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "02f914a1-77a1-ac46-d8cc-d2bdacc47d3b",
+    "origin": {
+      "x": 4840.0,
+      "y": 5224.0
+    },
+    "type": "Wolf",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "de3e8a2a-0c7d-b5a7-ce81-6d845ad418ce",
+    "origin": {
+      "x": 5164.0,
+      "y": 4848.0
+    },
+    "type": "Wisent",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "cd5dea4d-6db3-a6e0-5170-bae8867c519f",
+    "origin": {
+      "x": 5767.0,
+      "y": 5702.0
+    },
+    "type": "Bear",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "d86011ae-fa24-b075-8aa0-db2d40f854c4",
+    "origin": {
+      "x": 5995.0,
+      "y": 5623.0
+    },
+    "type": "Cave",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "01e6c53c-1efc-1e61-3811-e8b9b7eb6ca0",
+    "origin": {
+      "x": 5952.0,
+      "y": 5380.0
+    },
+    "type": "Buck",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "d7fc42bb-e9a5-8ac4-0c96-973c1459cb1a",
+    "origin": {
+      "x": 5775.0,
+      "y": 5082.0
+    },
+    "type": "Wisent",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "9de3a8a6-b106-ae29-9a99-e7928c55df02",
+    "origin": {
+      "x": 5480.0,
+      "y": 4989.0
+    },
+    "type": "Boar",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "20cc828d-9932-b408-67e9-dd4c288fd482",
+    "origin": {
+      "x": 5262.0,
+      "y": 5262.0
+    },
+    "type": "Fox",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "1a9036fb-d86c-1d8c-519b-ff16d65cec4a",
+    "origin": {
+      "x": 5510.0,
+      "y": 5208.0
+    },
+    "type": "Clay Deposit",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "17d820bb-a867-9722-9175-46f0606790d2",
+    "origin": {
+      "x": 5728.0,
+      "y": 4287.0
+    },
+    "type": "Clay Deposit",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "4ac757ec-1d67-a625-5745-d62076bbce92",
+    "origin": {
+      "x": 5558.0,
+      "y": 4117.0
+    },
+    "type": "Fox",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "58400a89-ec4a-1bf8-95be-5be7de45d934",
+    "origin": {
+      "x": 6011.0,
+      "y": 3970.0
+    },
+    "type": "Buck",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "e084e9e7-cffd-dc40-5a98-7c30f4f1adac",
+    "origin": {
+      "x": 5682.0,
+      "y": 3690.0
+    },
+    "type": "Rabbit",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "85dceb9f-c9b8-5143-7ed4-f3d5533a981e",
+    "origin": {
+      "x": 6365.0,
+      "y": 3860.0
+    },
+    "type": "Wolf",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "45ca5b22-5178-a595-2e41-e3775c6645ab",
+    "origin": {
+      "x": 6060.0,
+      "y": 4995.0
+    },
+    "type": "Wolf",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "004cd144-83db-9244-ef93-013c5841d6ec",
+    "origin": {
+      "x": 3512.0,
+      "y": 5539.0
+    },
+    "type": "Cave",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "76abc605-cf89-9b39-38f9-62e9b5f8eb9f",
+    "origin": {
+      "x": 2172.0,
+      "y": 3983.0
+    },
+    "type": "Clay Deposit",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "86e78dce-096a-2fec-7822-abdaca93c574",
+    "origin": {
+      "x": 2105.0,
+      "y": 3552.0
+    },
+    "type": "Wolf",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "2b42575b-ac9c-6f02-73e0-095c7e622fb3",
+    "origin": {
+      "x": 3077.0,
+      "y": 4305.0
+    },
+    "type": "Clay Deposit",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "d2d44737-4238-039e-86ae-fa343a657d01",
+    "origin": {
+      "x": 2794.0,
+      "y": 4187.0
+    },
+    "type": "Rabbit",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "6435dc76-03c3-2756-1c5a-60dd62131e0f",
+    "origin": {
+      "x": 2739.0,
+      "y": 4466.0
+    },
+    "type": "Fox",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "a603c2f1-c695-bdb6-c2e3-80041a7bc4ae",
+    "origin": {
+      "x": 3003.0,
+      "y": 4753.0
+    },
+    "type": "Wisent",
+    "payload": null,
+    "payloadId": null
+  },
+  {
+    "id": "18c04e57-7807-3bdb-9c2d-24bd2dfa9c24",
+    "origin": {
+      "x": 3314.0,
+      "y": 4411.0
+    },
+    "type": "Fox",
+    "payload": null,
+    "payloadId": null
+  }
+]
